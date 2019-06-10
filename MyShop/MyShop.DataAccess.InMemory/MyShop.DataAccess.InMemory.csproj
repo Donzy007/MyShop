@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProductCategoryRepository.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -48,6 +49,14 @@
     <ProjectReference Include="..\MyShop.Core\MyShop.Core.csproj">
       <Project>{8BCA7AD3-61A2-4CC6-9ED8-B0016D166AEE}</Project>
       <Name>MyShop.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShop.Services\MyShop.Services.csproj">
+      <Project>{6a1ea3f2-ddfa-4a9c-bc2f-0abd33323c79}</Project>
+      <Name>MyShop.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShopDataAccess.SQL\MyShop.DataAccess.SQL.csproj">
+      <Project>{9349c1f6-d92d-437a-8c26-a9f826bbd35c}</Project>
+      <Name>MyShop.DataAccess.SQL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
